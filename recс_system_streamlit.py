@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 @st.cache_data
 def load_data():
     # Замените на ваш путь к датасету
-    df = pd.read_csv('your_dataset.csv')
+    df = pd.read_csv('games-1.csv')
     df['Название'] = df['Название'].fillna('')
     df['Описание'] = df['Описание'].fillna('')
     df['Жанры'] = df['Жанры'].fillna('')
